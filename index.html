@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Hotel Dehradun</h1>
+    </header>
+
+    <main>
+        <section class="customer-data">
+            <h2>Customer Data</h2>
+            <form id="customerForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" required><br>
+
+                <label for="cindate">Check-in Date:</label>
+                <input type="date" id="cindate" required><br>
+
+                <label for="coutdate">Check-out Date:</label>
+                <input type="date" id="coutdate" required><br>
+
+                <button type="button" id="submitData">Submit Data</button>
+            </form>
+        </section>
+
+        <section class="room-rent">
+            <h2>Room Rent</h2>
+            <p>Select Room Type:</p>
+            <select id="roomType">
+                <option value="4000">Class A - Rs 4000</option>
+                <option value="3000">Class B - Rs 3000</option>
+                <option value="2000">Class C - Rs 2000</option>
+                <option value="1000">Class D - Rs 1000</option>
+            </select>
+            <label for="nights">Nights:</label>
+            <input type="number" id="nights" value="1"><br>
+            <button type="button" id="calculateRoomRent">Calculate Room Rent</button>
+            <p id="roomRentResult"></p>
+        </section>
+
+        <section class="food-menu">
+            <h2>Food Purchased</h2>
+            <p>Select Items:</p>
+            <div>
+                <label>Dessert - Rs 100</label>
+                <input type="number" id="dessertQty" value="0"><br>
+
+                <label>Drinks - Rs 50</label>
+                <input type="number" id="drinksQty" value="0"><br>
+
+                <label>Breakfast - Rs 90</label>
+                <input type="number" id="breakfastQty" value="0"><br>
+
+                <label>Lunch - Rs 110</label>
+                <input type="number" id="lunchQty" value="0"><br>
+
+                <label>Dinner - Rs 150</label>
+                <input type="number" id="dinnerQty" value="0"><br>
+            </div>
+            <button type="button" id="calculateFoodCost">Calculate Food Cost</button>
+            <p id="foodCostResult"></p>
+        </section>
+
+        <section class="total-cost">
+            <h2>Total Cost</h2>
+            <button type="button" id="showTotalCost">Show Total Cost</button>
+            <p id="totalCostResult"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel Dehradun</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

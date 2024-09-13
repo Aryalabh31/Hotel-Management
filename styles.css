@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styling for both Customer Data and Room Rent sections */
+section {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 48%;
+}
+
+/* Ensure sections are aligned in a row */
+.customer-data {
+    align-self: flex-start; /* Align to the left */
+}
+
+.room-rent {
+    align-self: flex-start; /* Align to the right */
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7f73;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    main {
+        display: block;
+    }
+    section {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
